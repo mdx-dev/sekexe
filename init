@@ -3,7 +3,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 mount -t tmpfs none /tmp
 mount -t tmpfs none /var/run
 mount -t hostfs -o $LOGDIR none /var/log
-mount -t hostfs -o /home/travis/docker none /var/lib/docker
+mount -t hostfs -o /home/travis/docker none /home/travis/docker
 mount -t tmpfs none /var/lib/docker
 mount -t proc none /proc
 mkdir /dev/pts
